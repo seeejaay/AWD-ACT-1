@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
 
 .container {
@@ -10,9 +9,24 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
-
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  border: 2px solid green;
+}
 .card-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  width: clamp(800px, 100vw, 1500px);
+}
+/* .card-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -37,4 +51,4 @@
   width: 100%;
   max-width: 500px;
   margin: 10px;
-}
+} */
