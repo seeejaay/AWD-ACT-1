@@ -19,9 +19,3 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 10000); // Change slide every 2 seconds
 }
-
-const buttonBG = document.getElementById("_buttonBG");
-
-buttonBG.addEventListener("click", () => {
-  window.open("../../BackgroundAnimation/bgAnimation.html");
-});
